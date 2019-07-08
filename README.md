@@ -21,58 +21,54 @@ Tutorial del Paradigma de Programación Concurrente usando Golang
 
 4) Añada las siguientes lineas a su archivo $HOME/.bashrc (nano ~/.bashrc)
 
-´´´
+
 export GOROOT=$HOME/gocompiler/go
 export PATH=$GOROOT/bin:$PATH
 
 export GOPATH=$HOME/mygoproject1
 export PATH=$GOPATH/bin:$PATH
-´´´
+
 5) Para obtener la ayuda de los comandos de Go
-´´´
+
 go help
-´´´
+
 6) Verifique que la versión sea superior a 9.x
-´´´
+
 pip —version
-´´´
+
 7) Actualice el paquete de python-pip
-´´´
+
 sudo pip install —upgrade pip
-´´´
+
 8) Instale Jupyter
-´´´
+
 sudo pip install jupyter
-´´´
+
 9) Corra el servidor de Jupyter para probar que la instalación fue exitosa
-´´´
+
 jupyter notebook
-´´´
+
 10) Instalar goimports
-´´´
+
 go get golang.org/x/tools/cmd/goimports
-´´´
+
 11) Instalar ZeroMQ
-´´´
+
 sudo apt-get install libzmq3-dev
-´´´
+
 12) Instaler golang kernel
-´´´
+
 go get -tags zmq_4_x github.com/gopherds/gophernotes
-´´´
-Ref:
-https://github.com/gopherdata/gophern...
 
 13) Cree un directorio para la configuración del nuevo kernel
-´´´
+
 mkdir -p ~/.local/share/jupyter/kernels/gophernotes
-´´´
+
 14) Copie la configuración del kernel dentro del directorio .ipython
-´´´
+
 cp -r $GOPATH/src/github.com/gopherds/gophernotes/kernel/* ~/.local/share/jupyter/kernels/gophernotes
-´´´
+
 15) Arranque el servidor de Jupyter y cree un Notebook de Go
 
-´´´
 jupyter notebook
-´´´
+
